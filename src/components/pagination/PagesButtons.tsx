@@ -30,6 +30,9 @@ const PagesButtons = ({
           >
             {idx + 1}
           </button>
+
+
+
         ))}
       </div>
       {skip < (totalPages - 1) * LIMIT && (
