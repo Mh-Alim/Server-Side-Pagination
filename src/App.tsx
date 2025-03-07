@@ -1,15 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PaginationContainer from "./components/pagination/PaginationContainer";
+// import NavbarContainer from "./components/Navbar/NavbarContainer";
 
 function App() {
-
   return (
     <>
-      <button className='bg-red-500'>Clikc me</button>
+      {/* <NavbarContainer /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/pagination" element={<PaginationContainer />} />
+        </Routes>
+      </BrowserRouter>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
