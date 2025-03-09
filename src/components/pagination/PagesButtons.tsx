@@ -1,5 +1,5 @@
 import React from "react";
-import { CardType, LIMIT } from "./PaginationContainer";
+import { LIMIT } from "./PaginationContainer";
 
 const PagesButtons = ({
   totalPages,
@@ -30,9 +30,6 @@ const PagesButtons = ({
           >
             {idx + 1}
           </button>
-
-
-
         ))}
       </div>
       {skip < (totalPages - 1) * LIMIT && (
